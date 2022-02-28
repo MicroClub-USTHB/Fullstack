@@ -1,0 +1,75 @@
+
+h1{
+    font-size: 50px;
+    font-family: Roboto,Arial, sans-serif;
+}
+h1,p{
+    background-color: aqua;
+}
+.TobePurple{
+    color: purple;
+}
+p{
+    color : red;
+    background-color: yellow;
+    font-size: 8px;
+}
+#SoSpecial{
+    list-style:georgian;
+    color: black;
+    background-color: chartreuse;
+}
+.specialList{
+    list-style:circle;
+}
+#SoSpecial{
+    color: white;
+}
+div p span{
+   color: darkgoldenrod; 
+   background-color: darkblue;
+}
+div>h1{
+    background-color: darkgrey;
+} 
+li:hover{
+    color:crimson;
+}
+input:checked{
+    transform: scale(2);
+}
+a:visited{
+    color: gold;
+}
+ol{
+    position: relative;
+}
+ol>li:nth-child(5){
+    color: brown;
+    /*position: absolute;
+    left: 50px;
+    top: 100px;*/
+}
+p::first-letter{
+    font-size: 20px;
+}
+.specialH1{
+    /* color: #649b0d;  */
+    color: rgb(201 99 12);
+    border: 3px dashed black;
+    padding: 10px;
+    padding: 0 100px;
+    margin: 10px 5px 50px 2px;
+    width: 600px;
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;
+}
+div{
+    display: inline;
+}
+div *{
+    width: 200px;
+}
