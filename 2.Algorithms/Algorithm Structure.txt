@@ -1,0 +1,6 @@
+Algorithm Name
+Variables ( Var )
+    // Declarations
+Begin
+    // instructions
+END

@@ -1,0 +1,26 @@
+Algorithm Name
+Variables ( Var )
+    float X;
+    string First_Name;
+Begin
+    X = 8.8; // assignment instruction
+
+    /**----------output----------**/
+    // python uses : print for its output
+    // javascript uses : console.log()
+    write( X ); // ecrire
+    write( "Hii this is an output msg for you to see" ) ;
+    write( "Hello world" ); // print("Hello world")
+    write( 8 );
+    write( 79.6 );
+
+    /**--------input------**/
+    read( First_Name ); // if i write Youcef
+    /// its equal to First_Name= "Youcef";
+
+    write("Hii i'm ");
+    write(First_Name);
+
+    
+
+END

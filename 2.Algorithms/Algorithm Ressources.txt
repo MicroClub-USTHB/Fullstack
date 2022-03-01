@@ -1,0 +1,17 @@
+Algorithm Name
+Variables ( Var )
+    string Name = "Youcef" ;
+    // string Name5 = 5;// wrong and gonna cause an error bcs the type doesnt match the value
+    Name_2 = "Haru";
+    Name3 = "Samy";
+    // 5Name forbiden 
+    _Name // is allowed
+    #Name // rare
+    $Name // rare
+    name // is accaptable
+    const Name8 = "Ikram"; // doesnt change after declaration
+    age =20;
+Begin
+    // instructions
+
+END

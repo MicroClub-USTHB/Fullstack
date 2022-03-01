@@ -1,0 +1,19 @@
+ingrediants:
+    3 eggs
+    a spoon of oil
+    a little spoon of salt
+    spieces ..
+tools
+    bowl
+    spoons
+    forks
+    pan
+instructions
+    1- cracking the eggs in a bowl
+    2- adding some salf 
+    3- adding some spieces
+    4- mix the what is inside the bowl
+    5- we turn on the oven
+    6- put the pan to heat up and add a spoon of oil
+    7- put the mix on the pan
+    8- wait for 3min and serve it.

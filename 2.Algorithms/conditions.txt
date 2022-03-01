@@ -1,0 +1,25 @@
+Algorithm Condition
+Variables ( Var )
+    float N1,N2,N3,N4;
+    float Average;    
+Begin
+    write("Write your 1st Note: ");
+    read(N1);
+    write("Write your 2nd Note: ");
+    read(N2);
+    write("Write your 3rd Note: ");
+    read(N3);
+    write("Write your 4th Note: ");
+    read(N4);
+
+    Average= (N1+N2+N3+N4) / 4;
+    write("Your Average is : ");
+    write(Average);
+
+    if( Average >= 10  ) then
+        write("You succeded in the exam");
+    else 
+        write("You failed the exam");
+    EndIf
+    
+END

@@ -1,0 +1,53 @@
+Algorithm Name
+Variables ( Var )
+    boolean imLying;
+    boolean teacher;
+    boolean truthfull;
+    boolean hardworker;
+    boolean IT_Teacher;
+    boolean Developer;
+    boolean MicroClubMember;
+    boolean intrestedInIt;
+    float X,Y;
+    boolean compare;
+Begin
+    imLying =false;
+    teacher =true;
+
+    /*------------Not inverse the boolean -----------*/
+    // Not true // false
+    // Not false // true
+    truthfull = Not imLying;
+    hardworker = teacher;
+
+    /*-----------AND combine two boolean that both of them must be true----------*/
+    Developer = true;
+    IT_Teacher= (Developer And teacher)
+
+    /*-----------OR combine two boolean that one of them must be true----------*/
+    intrestedInIt = false;
+    MicroClubMember= intrestedInIt OR Developer;
+
+    /*--------Mathmathical comparision -------------*/
+    // a < b  : a is smaller than b
+    X=5;
+    Y=7;
+    compare= X < Y; // true
+
+    // a > b : a bigger than b 
+    compare= X > Y; // false
+    
+    // a <= b : a smaller or equal to b
+    compare= X <= Y; // true
+    
+    // a >= b : a bigger or equal to b 
+    compare= X >= Y; // false
+    
+    // a == b : a equal to b
+    compare= X == Y; // false
+    
+    // a != b : a not equal to b
+    compare= X != Y; // true
+
+
+END

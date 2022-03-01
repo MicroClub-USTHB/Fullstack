@@ -1,0 +1,7 @@
+
+instructions 
+1- we wake up in the morning 
+2- we prepare our selves to go out 
+3- if we have a car we take a ride to the university 
+    else we take the bus 
+4- we study ...

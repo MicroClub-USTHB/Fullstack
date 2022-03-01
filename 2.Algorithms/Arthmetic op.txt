@@ -1,0 +1,20 @@
+Algorithm Name
+Variables ( Var )
+    float X,Y,Result;
+Begin
+    X = 9;
+    Y =  7;
+    Result = X + Y; // addition
+    Result = X - Y; // Substraction
+    Result = X * Y; // Multiplications
+    Result = X / Y; // Division but be carful dividing by 0 may cause a problem
+    Result = X ** Y; // power ^
+    
+    Result = 16;
+    Result = Result + 1 ; // if Result was 16  we add one to it and its gonna be the new Result
+    Result++; // it is equal to Result = Result + 1; // incrementation
+
+    Result--; // it is equal to Result = Result - 1; // decrementation
+    
+
+END

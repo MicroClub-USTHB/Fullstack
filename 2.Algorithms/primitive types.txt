@@ -1,0 +1,13 @@
+// texts types 
+youcef = "Youcef" // string 
+youcef = 'Youcef' // string // some languages 
+// numbers 
+// natural numbers ( integers )
+rank = 500
+order  = -500
+// Reel numbers ( float )
+Grades = 11.5
+// Boolean
+// either true or false
+imLying= false 
+imTeaching= true
