@@ -1,0 +1,25 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans Pro",sans-serif;
+}
+
+.border{
+    border: 15px solid #bdc3c7;
+    width:50%;
+    margin: 100px auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+.Article:not(:last-of-type){
+    margin-bottom: 40px;
+}
+.Date{
+    text-transform: uppercase;
+    color: #3498db;
+    margin-top: 0;
+}
+p:first-of-type{
+    border-left: 5px solid #bdc3c7;
+    padding-left: 10px;
+}
