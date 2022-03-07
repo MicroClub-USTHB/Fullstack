@@ -1,0 +1,16 @@
+Algorithm Multi D Arrays
+var
+    float Grades[8][5];
+    int i,j;
+Begin
+    For(i=0; i < 8; i++)then 
+        For(j=0; j < 4 ; j++) then
+            /// Grades[0][0]
+            read(Grades[i][j]);
+        ENDFOR
+    ENDFOR
+    For(i=0; i<8 ; i++) then
+        Grades[i][4] = (Grades[i][0] + Grades[i][1]) * 0.4 + Grades[i][2] * 0.6;
+    ENDFOR
+    
+END

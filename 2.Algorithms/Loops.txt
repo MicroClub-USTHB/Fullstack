@@ -1,0 +1,60 @@
+Algorithm Loops
+Var
+    float note, Average, counter,numberNotes;
+Begin
+
+    // while Loops
+    // While( /* truee Condition*/ ) then
+        // Instructions
+    // ENDWHILE
+    note = 0;
+    while( note >=0 ) then
+        read( note ) // less than 0 will stop the loop
+        if( note >= 0 )then 
+            Average = Average + note;
+            counter++;
+        EndIf
+    ENDWHILE
+    Average= Average / counter;
+
+    // while loop or for loop
+    write("Enter the number of Notes to be inserted : ")
+    read( numberNotes )
+    counter= numberNotes;
+    while( counter > 0 ) then
+        read(Note)
+        Average = Average + Note;
+        counter--;
+    ENDWHILE
+    Average = Average / numberNotes;
+
+
+    /// for loop 
+    // For(initialisation ; Condition ; the iteration ) then
+        // Instructions
+    // ENDFOR
+
+    write("Enter the number of Notes to be inserted : ")
+    read( numberNotes )
+    For(counter= numberNotes ; counter>0 ; counter--) then
+        read( Note) 
+        Average = Average + Note;
+    ENDFOR
+    Average = Average/ numberNotes;
+    
+    // do while
+    // Do 
+        // Instructions
+    // While ( Condition )
+
+    Do
+        read(Note)
+        if(Note >=0)
+            Average = Average+Note
+            counter++;
+        EndIf
+    While( Note>=0) 
+
+
+
+END
