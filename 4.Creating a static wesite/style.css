@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --primary: #ffbd00;
+    --secondary: #ff60ce;
+    --background: #0b0016;
+    --grey: #9b9eac;
+    --light: #fff;
+    --dark:#0a0a0a;
+    --main-font:'Mitr', sans-serif;
+    --secondary-font: 'Barlow', sans-serif;
+    --sidePadding: 12%;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--secondary-font);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: var(--background);
+    color: var(--grey);
+    width: 100%;
+}
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 var(--sidePadding);
+    width: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: 300;
+}
+.main-nav.fixed{
+    position: fixed;
+    background-color: var(--dark);
+}
+.nav-logo{
+    height: 5em;
+    width: 6em;
+    display: flex;
+    align-items: center;
+}
+.main-nav-elements{
+    display: flex;
+    margin: 0 0 0 auto;
+}
+.main-nav-element, .hover-element{
+    list-style: none;
+    text-transform: uppercase;
+    margin: auto 1em;
+    font-weight: 700;
+}
+.main-nav-element > a{
+    color: var(--light);
+    text-decoration: none;
+    padding: 1em 0;
+}
+.main-nav-element:first-child > a{
+    color: var(--primary);
+}
+.main-nav-element:hover > a, .hover-element:hover > a {
+    color:var(--secondary);
+}
+.main-button{
+    background-color: var(--primary);
+    color:var(--dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    margin: auto 0;
+    border: 1px solid var(--primary);
+    transition: background 300ms ease-in,color 300ms ease-in;
+}
+.main-button:hover{
+    background-color: transparent;
+    color: var(--primary);
+}
+.hover-menu{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top:2em;
+    background-color: var(--light);
+    padding: 0;
+    
+}
+.hover-menu a {
+    color:var(--dark);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.menu-holder{
+    position: relative;
+    
+}
+.menu-holder:hover .hover-menu{
+    visibility: visible;
+}
+.hover-element{
+    display: flex;
+}
+#Home{
+    height: 100vh;
+    background: url(./images/background.jpg) ;
+    background-size: cover;
+    display: flex;
+}
+#Home::before{
+    content: " ";/* important */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background : linear-gradient(to bottom, rgba(11, 0, 22, 0.6) 0%, rgba(11, 0, 22, 0.7) 65%, rgba(11, 0, 22, 1) 100%);
+}
+#Home > section{
+    z-index: 1;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--sidePadding);
+}
