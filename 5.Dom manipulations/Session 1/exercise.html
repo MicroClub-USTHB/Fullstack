@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise</title>
+</head>
+<body>
+    <h1>I am a good h1</h1>
+    <p id="first" class="special" >Hello my family</p>
+    <p class="special">Goodbye</p>
+    <p>Hi again</p>
+    <p id="last">Goodbye again</p>
+    <script>
+        var first = document.getElementById("first");
+        first.style.color="purple";
+        var special=document.getElementsByClassName("special")[0];
+        special.style.fontWeight="bold";
+        var p=document.getElementsByTagName("p")[0];
+        p.style.padding="20px";
+        var anotherP= document.querySelector("p");
+        anotherP.style.borderBottom="1px solid purple"
+        var anotherWay=document.querySelectorAll("p")[0];
+        anotherWay.style.fontSize="25px";
+        
+    </script>
+</body>
+</html>

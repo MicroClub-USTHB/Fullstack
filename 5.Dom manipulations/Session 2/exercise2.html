@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercise 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>To-do List</h1>
+        <input type="text" placeholder="Add your todo"/>
+        <button>Add</button>
+        <ul id="todo"></ul>
+
+        <script>
+            var input = document.querySelector("input"),
+                add = document.querySelector("button"),
+                todoList = document.querySelector("#todo");
+
+            function GenerateColor() {
+                var r = Math.floor(Math.random() * 255),
+                    g = Math.floor(Math.random() * 255),
+                    b = Math.floor(Math.random() * 255);
+                return `rgb(${r},${g},${b})`; // "rgb("+r+","+g+","+b+")"
+            }
+            add.addEventListener("click", function () {
+                
+                var listElement = document.createElement("li");
+                listElement.innerText = input.value;
+                input.value = "";
+                listElement.style.backgroundColor = GenerateColor();
+                listElement.addEventListener("click",function(e){
+                    listElement.classList.toggle("done");
+                })
+                todoList.append(listElement);
+            });
+        </script>
+    </body>
+</html>

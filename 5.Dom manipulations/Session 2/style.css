@@ -1,0 +1,6 @@
+.Hide{
+    visibility: hidden;
+}
+.done{
+    text-decoration: line-through;
+}

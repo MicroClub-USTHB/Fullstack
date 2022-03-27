@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 2 DOM manipulations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input style="color: blue;" type="text" placeholder="Search" >
+    <a href="https://www.google.com">Search</a>
+    <script>
+        var a = document.getElementsByTagName("a")[0];
+        // var href = a.getAttribute("href")
+        var input = document.getElementsByTagName("input")[0];
+        
+        /*input.onchange = function(e){
+            var value = input.value;
+            a.setAttribute("href","https://www.linkedin.com/search/results/all/?keywords="+value)
+        }*/
+        input.addEventListener("change",function(){
+            if(input.value=="Hide"){
+                a.classList.add("Hide");
+            }else{
+                a.classList.remove("Hide");
+            }
+
+            a.innerText=input.value
+        })
+
+
+        input.addEventListener("change",function(){
+            var h2=document.createElement("h2")
+            h2 .innerText= input.value
+            document.body.append(h2)
+        })
+        
+
+        
+        
+    </script>
+</body>
+</html>
