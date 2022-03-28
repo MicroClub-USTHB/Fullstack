@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My title</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class="special" style="color: blue">My Header</h1>
+        <a href="http://microclub.net">My link</a>
+        <div>
+            <p class="special">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                in harum tempore ad repellendus asperiores?
+            </p>
+            <p id="last">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+                dolore earum reiciendis?
+            </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+            praesentium et qui cupiditate?
+        </p>
+        <script>
+            var body = document.body;
+            var paragraphs = document.getElementsByTagName("p");
+            var special = document.getElementsByClassName("special");
+            var last = document.getElementById("last");
+            var inside = document.querySelector("div > p");
+            var allInside = document.querySelectorAll("div > p");
+
+            var h2 = document.createElement("h2");
+
+            h2.innerText = "Hi i'm new here please accept me! :'(";
+
+            body.appendChild(h2);
+
+            body.style.backgroundColor = "#56fd98";
+            paragraphs[1].style.color = "brown";
+
+            for (var i = 0; i < special.length; i++) {
+                special[i].style.fontSize = "30px";
+            }
+
+            last.style.border = "1px solid black";
+
+            allInside[0].style.border = "2px dashed white";
+
+            setTimeout(function () {
+                body.removeChild(h2);
+            }, 5000);
+        </script>
+    </body>
+</html>

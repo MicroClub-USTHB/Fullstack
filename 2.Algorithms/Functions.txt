@@ -1,0 +1,24 @@
+Algorithm TestFunction
+Var 
+    // s= 1!+ 2!+ 3! +.....+x!;
+    int S,x,i;
+Begin
+    read(x);
+    S=0;
+    for(i = 0 ; i<=x ; i++){
+        S= S + factorial(i); // S= S + i!;
+    }
+
+END
+
+Function int factorial( int n  ) // n = i
+var
+    int i,S;
+Begin
+    S= 1;
+    for(i=1; i<=n; i++) then   
+        // 1 * 2 * 3 *..... * n == n!
+        S = S * i;
+    ENDFOR
+    return S;
+END

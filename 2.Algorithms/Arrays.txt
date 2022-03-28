@@ -1,0 +1,32 @@
+Algorithm Arrays
+Var
+    float Notes[10],Average , x;
+    boolean found;
+    int i;
+Begin
+    // Notes[0]=5
+    // Notes[1]=12
+    // Notes[2]=17
+
+    For(i=0; i<10; i++ ) then
+        read(Notes[i])
+    ENDFOR
+
+    For(i=0; i<10; i++) then 
+        Average= Average + Notes[i];
+    ENDFOR
+    Average =  Average/ 10;
+
+    // find a specific value 
+    read(x)
+    found = false;
+    i = 0;
+    while( not found AND i<10) then 
+        if(x == Notes[i])then
+            found =true;
+        EndIf
+        i++;
+    ENDWHILE
+    write(found)
+
+END

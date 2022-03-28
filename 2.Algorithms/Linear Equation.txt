@@ -1,0 +1,19 @@
+Algorithm Linear Equation
+Var
+    float a,b , x ,f;
+Begin
+    // f(x)= ax+b 
+    Read( a )
+    Read( b )
+    f= -b/a;
+    
+    Write("For this function to be equal zero our x must be : ");
+    Write(f);
+
+    read( x )
+    f= a * x +b;
+    write("F(")
+    write(x)
+    write(") = ")
+    write(f)
+END
