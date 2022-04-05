@@ -65,21 +65,22 @@ body{
 .main-nav-element:hover > a, .hover-element:hover > a {
     color:var(--secondary);
 }
-.main-button{
+.button,.button.secondary:hover{
     background-color: var(--primary);
     color:var(--dark);
     font-weight: 700;
     text-transform: uppercase;
-    padding: 1em 1.5em;
+    padding: 0.8em 1.8em;
     font-size: 1em;
     margin: auto 0;
     border: 1px solid var(--primary);
     transition: background 300ms ease-in,color 300ms ease-in;
 }
-.main-button:hover{
+.button:hover,.button.secondary{
     background-color: transparent;
     color: var(--primary);
 }
+
 .hover-menu{
     visibility: hidden;
     position: absolute;
@@ -105,6 +106,57 @@ body{
 .hover-element{
     display: flex;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 5em var(--sidePadding);
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color:var(--light);
+    font-family: var(--main-font);
+    margin: 0;
+    line-height: 1em;
+}
+h1{
+    font-size: 5rem;/* 3.5 x size of the root font*/
+    width: 8.2ch;
+}
+h1::first-line{
+    color:var(--primary);
+}
+h2{
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+h3{
+    color:var(--secondary);
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+}
+h4{
+    color:var(--secondary);
+    font-size: 2rem;
+}
+h6{
+    margin-top: 0.5em;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+h6:hover{
+    color: var(--secondary);
+}
+a{
+    color: var(--light);
+    text-decoration: none;
+}
+p{
+    font-size: 1.1em;
+}
+/*---------- HOME -----------------*/
 #Home{
     height: 100vh;
     background: url(./images/background.jpg) ;
@@ -122,9 +174,110 @@ body{
 }
 #Home > section{
     z-index: 1;
+    justify-content: center;
 }
-section{
+#Home .info{
     display: flex;
     flex-direction: column;
-    padding: 0 var(--sidePadding);
+    align-items: flex-end;
+    width: 100%;
+}
+
+#Home .info a{
+    margin-bottom: 0.5em;
+}
+/*------------About ----------*/
+#About {
+    flex-direction: row;
+    align-items: center;
+    
+}
+.about-sub{
+    width: 50%;
+}
+.about-sub h2{
+    width: 9ch;
+    margin-bottom: 0.5em;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-counters{
+    margin-top: 0.5em;
+}
+.about-counters p{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*--------------------Speakers ------------*/
+#Speakers .top-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+}
+.speaker{
+    padding: 0 0.5em;
+}
+.speaker-visual{
+    position: relative;
+    overflow: hidden;
+}
+.speaker-visual .speaker-socials{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 15%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.speaker-visual .speaker-socials img{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    padding: 0.5em;
+    background-color: var(--secondary);
+    
+}
+.speaker-visual .speaker-socials img:hover{
+    background-color: var(--primary);
+}
+.speaker-visual .speaker-socials .speaker-social{
+    transform: translateY(5em);
+    transition: transform 300ms ease-out;
+}
+.speaker-visual .speaker-socials .speaker-social:nth-child(2){
+    transition-delay: 100ms;
+}
+.speaker-visual .speaker-socials .speaker-social:nth-child(3){
+    transition-delay: 200ms;
+}
+.speaker-visual:hover .speaker-socials .speaker-social{
+    transform: translateY(0);
+}
+.speaker-visual > img{
+    transition: transform 300ms ease-out;
+}
+.speaker-visual:hover > img{
+    transform: scale(1.1);
+}
+.speaker p{
+    margin: 0.5em 0;
+    color: var(--light);
+}
+.speaker p span{
+    color:var(--grey);
+}
+.speakers .owl-nav{
+width: calc(100% + 6em);
+position: absolute;
+display: flex;
+margin: auto -3em;
+justify-content: space-between;
+top: 35%;
+}
+.speakers.speakers .owl-nav button{
+    font-size: 5em;
 }
