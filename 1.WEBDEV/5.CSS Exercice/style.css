@@ -2,30 +2,92 @@
 DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
 
 /* Give the <body> element a background of #0fcf90*/
+body{
+
+    background-color:#0fcf90 ;
+    /*or background :#0fcf90;*/
+}
+
 
 /* Make the <h1> element #b9105e*/
 
+h1{
+
+    color: #b9105e;
+}
+
 /* Make all <h2> elements orange */
+h2{
+    color: orange;
+}
 
 /* Make all <li> elements blue(pick your own hexadecimal blue)*/ 
 
+li{
+    color: #0b0beb;
+}
+
 /*Change the background on every paragraph to be yellow*/
+p{
+    background-color: yellow;
+}
 
 /*Make all inputs have a 3px red border*/
 
+input{
+
+    border: 3px  red;
+    /*it won't show up because the style is not specified*/
+}
+
 /* Give everything with the class 'hello' a white background*/
+.hello{
+    background-color: white;
+}
 
 /* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+#special{
+
+    border: 2px solid rgb(14, 14, 204);
+   
+
+}
 
 /*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
 
+div p {
+
+    font-size: 25px;
+}
+
 /*Make only inputs with type 'text' have a gray background*/
 
+input[type="text"]{
+
+background-color: gray;
+
+}
+
 /* Give both <p>'s inside the 3rd <div> a pink background*/
+div:nth-of-type(3) p {
+    background-color: pink;
+}
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
+div:nth-of-type(3) p:nth-of-type(2) {
+    
+    border: 5px  white;
+    /*it won't show up because the style is not specified*/
+    
+}
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
+div:nth-of-type(3) em {
+
+   color: white;
+   font-size: 20px;
+
+}
 
 
 /*BONUS CHALLENGES*/
@@ -33,10 +95,33 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
 
 /*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
 
+input:checked{
+
+    margin-left: 50px;
+}
+
 /* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
+
+label{
+    text-transform: uppercase;
+}
 
 /*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
 
+#special::first-letter{
+
+    font-size: 100px;
+    color: green;
+    
+}
+
 /*Make the <h1> element's color change to blue when hovered over */
+h1:hover{
+    color: blue;
+}
 
 /*Make the <a> element's that have been visited gray */
+a:visited{
+    color: gray;
+
+}
